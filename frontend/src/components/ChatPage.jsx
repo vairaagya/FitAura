@@ -20,7 +20,7 @@ const ChatPage = () => {
   const sendMessageHandler = async (receiverId) => {
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/v1/message/send/${receiverId}`,
+        `https://fitaura-7ryw.onrender.com/api/v1/message/send/${receiverId}`,
         { textMessage },
         {
           headers: {

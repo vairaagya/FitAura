@@ -8,9 +8,12 @@ const useGetAllPost = () => {
   useEffect(() => {
     const fetchAllPost = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/v1/post/all", {
-          withCredentials: true,
-        });
+        const res = await axios.get(
+          "https://fitaura-7ryw.onrender.com/api/v1/post/all",
+          {
+            withCredentials: true,
+          }
+        );
         if (res.data.success) {
           console.log(res.data.posts);
           dispatch(setPosts(res.data.posts));

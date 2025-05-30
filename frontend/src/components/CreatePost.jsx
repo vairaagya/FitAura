@@ -36,7 +36,7 @@ const CreatePost = ({ open, setOpen }) => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:5000/api/v1/post/addpost",
+        "https://fitaura-7ryw.onrender.com/api/v1/post/addpost",
         formData,
         {
           headers: {
